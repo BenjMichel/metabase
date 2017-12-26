@@ -292,7 +292,7 @@ describe("LineAreaBarRenderer", () => {
             settings: {
                 "bar.scalar_series": true,
                 "funnel.type": "bar",
-                "graph.colors": ["#509ee3", "#9cc177", "#a989c5", "#ef8c8c"],
+                "graph.colors": ["#172c42", "#9cc177", "#a989c5", "#ef8c8c"],
                 "graph.x_axis.axis_enabled": true,
                 "graph.x_axis.scale": "ordinal",
                 "graph.x_axis._is_numeric": false

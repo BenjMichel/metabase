@@ -1,5 +1,5 @@
 :root {
-  --brand-color: #509EE3;
+  --brand-color: #172c42;
   --brand-light-color: #CDE3F8;
   --brand-saturated-color: #2D86D4;
 
@@ -169,19 +169,19 @@
 
 /* white  - move to bottom for specificity since its often used on hovers, etc */
 .text-white, :local(.text-white),
-.text-white-hover:hover { color: #fff; }
+.text-white-hover:hover { color: #f1e6ca; }
 
 @media screen and (--breakpoint-min-md) {
-  .md-text-white { color: #fff; }
+  .md-text-white { color: #f1e6ca; }
 }
 
 /* common pattern, background brand, text white when hovering or selected */
 .brand-hover:hover {
-    color: #fff;
+    color: #f1e6ca;
     background-color: var(--brand-color);
 }
 .brand-hover:hover * {
-    color: #fff;
+    color: #f1e6ca;
 }
 
 .bg-white, :local(.bg-white) { background-color: #fff; }

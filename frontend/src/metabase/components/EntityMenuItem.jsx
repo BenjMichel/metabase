@@ -16,14 +16,14 @@ const itemClasses = cxs({
     textDecoration: 'none',
     transition: 'all 300ms linear',
     ':hover': {
-        color: '#509ee3'
+        color: '#172c42'
     },
     '> .Icon': {
         color: '#BCC5CA',
         marginRight: '0.65em'
     },
     ':hover > .Icon': {
-        color: '#509ee3',
+        color: '#172c42',
         transition: 'all 300ms linear',
     },
     // icon specific tweaks

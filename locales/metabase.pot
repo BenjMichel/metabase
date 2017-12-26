@@ -60,16 +60,16 @@ msgstr ""
 
 #: frontend/src/metabase/lib/greeting.js:2
 msgid "Hey there"
-msgstr ""
+msgstr "Hello"
 
 #: frontend/src/metabase/lib/greeting.js:3
 #: frontend/src/metabase/lib/greeting.js:25
 msgid "How's it going"
-msgstr ""
+msgstr "Coucou"
 
 #: frontend/src/metabase/lib/greeting.js:4
 msgid "Howdy"
-msgstr ""
+msgstr "Que la force soit avec toi"
 
 #: frontend/src/metabase/lib/greeting.js:5
 msgid "Greetings"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: frontend/src/metabase/lib/greeting.js:6
 msgid "Good to see you"
-msgstr ""
+msgstr "Content de te revoir"
 
 #: frontend/src/metabase/lib/greeting.js:10
 msgid "What do you want to know?"

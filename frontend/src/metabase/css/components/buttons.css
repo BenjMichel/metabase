@@ -3,8 +3,8 @@
   --default-button-border-color: #b9b9b9;
   --default-button-background-color: #fff;
 
-  --primary-button-border-color: #509EE3;
-  --primary-button-bg-color: #509EE3;
+  --primary-button-border-color: #172c42;
+  --primary-button-bg-color: #172c42;
   --warning-button-border-color: #EF8C8C;
   --warning-button-bg-color: #EF8C8C;
   --danger-button-bg-color: #EF8C8C;
@@ -67,13 +67,13 @@
 }
 
 .Button--primary {
-  color: #fff;
+  color: #f1e6ca;
   background: var(--primary-button-bg-color);
   border: 1px solid var(--primary-button-border-color);
 }
 
 .Button--primary:hover {
-  color: #fff;
+  color: #f1e6ca;
   border-color: color(var(--primary-button-border-color) shade(10%));
   background-color: color(var(--primary-button-bg-color) shade(10%));
 }

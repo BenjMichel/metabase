@@ -60,8 +60,8 @@
 }
 
 .PulseListItem.PulseListItem--focused {
-  border-color: #509EE3;
-  box-shadow: 0 0 3px #509EE3;
+  border-color: #172c42;
+  box-shadow: 0 0 3px #172c42;
 }
 
 .DangerZone:hover {

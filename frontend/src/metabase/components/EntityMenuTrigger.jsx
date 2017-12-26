@@ -12,11 +12,11 @@ const EntityMenuTrigger = ({ icon, onClick, open }) => {
         height: 40,
         borderRadius: 99,
         cursor: 'pointer',
-        color: open ? '#509ee3' : 'inherit',
+        color: open ? '#172c42' : 'inherit',
         backgroundColor: open ? interactionColor : 'transparent',
         ':hover': {
             backgroundColor: interactionColor,
-            color: '#509ee3',
+            color: '#172c42',
             transition: 'all 300ms linear'
         },
         // special cases for certain icons

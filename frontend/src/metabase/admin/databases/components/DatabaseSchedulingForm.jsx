@@ -17,14 +17,14 @@ export const SyncOption = ({ selected, name, children, select }) =>
                 width: 18,
                 height: 18,
                 borderWidth: 2,
-                borderColor: selected ? '#509ee3': '#ddd',
+                borderColor: selected ? '#172c42': '#ddd',
                 borderStyle: 'solid'
             }}
         >
             { selected &&
                 <div
                     className="circle"
-                    style={{ width: 8, height: 8, backgroundColor: selected ? '#509ee3' : '#ddd' }}
+                    style={{ width: 8, height: 8, backgroundColor: selected ? '#172c42' : '#ddd' }}
                 />
             }
         </div>
