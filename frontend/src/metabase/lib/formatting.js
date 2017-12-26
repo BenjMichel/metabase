@@ -20,6 +20,8 @@ import type { Field } from "metabase/meta/types/Field";
 import type { DatetimeUnit } from "metabase/meta/types/Query";
 import type { Moment } from "metabase/meta/types";
 
+moment.locale('fr');
+
 export type FormattingOptions = {
     column?: Column,
     majorWidth?: number,
@@ -135,8 +137,8 @@ export function formatTimeRangeWithUnit(value: Value, unit: DatetimeUnit, option
 }
 
 function formatWeek(m: Moment, options: FormattingOptions = {}) {
-    // force 'en' locale for now since our weeks currently always start on Sundays
-    m = m.locale("en");
+    // force 'fr' locale for now since our weeks currently always start on Mondays
+    m = m.locale("fr");
     return formatMajorMinor(m.format("wo"), m.format("gggg"), options);
 }
 
