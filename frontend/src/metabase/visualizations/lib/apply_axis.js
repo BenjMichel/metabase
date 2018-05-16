@@ -113,9 +113,11 @@ export function applyChartTimeseriesXAxis(chart, settings, series, { xValues, xD
         chart.xAxis().tickFormat(timestamp => {
             // timestamp is a plain Date object which discards the timezone,
             // so add it back in so it's formatted correctly
-            const timestampFixed = moment(timestamp).utcOffset(dataOffset).format();
+            const offset = dataInterval.interval === "month" ? 1 : 0; // DIRTY FIX for daylight saving (bug MySQL only ?)
+            const timestampFixed = moment(timestamp).utcOffset(dataOffset).add(offset, 'hours').format();
             return formatValue(timestampFixed, { column: dimensionColumn, type: "axis" })
         });
+
 
         // Compute a sane interval to display based on the data granularity, domain, and chart width
         tickInterval = computeTimeseriesTicksInterval(xDomain, tickInterval, chart.width());
