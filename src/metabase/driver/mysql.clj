@@ -105,10 +105,10 @@
     ;; To convert a YEARWEEK (e.g. 201530) back to a date you need tell MySQL which day of the week to use,
     ;; because otherwise as far as MySQL is concerned you could be talking about any of the days in that week
     :week            (str-to-date "%x%v %W"
-                                  (hx/concat (hsql/call :yearweek expr 7)
+                                  (hx/concat (hsql/call :yearweek expr 3)
                                              (hx/literal " Monday")))
-    ;; mode 7: Monday is first day of week
-    :week-of-year    (hx/inc (hx/week expr 7))
+    ;; mode 3: Monday is first day of week
+    :week-of-year    (hx/inc (hx/week expr 3))
     :month           (str-to-date "%Y-%m-%d"
                                   (hx/concat (date-format "%Y-%m" expr)
                                              (hx/literal "-01")))
