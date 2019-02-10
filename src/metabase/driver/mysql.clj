@@ -204,13 +204,13 @@
 ;; To convert a YEARWEEK (e.g. 201530) back to a date you need tell MySQL which day of the week to use,
 ;; because otherwise as far as MySQL is concerned you could be talking about any of the days in that week
 (defmethod sql.qp/date [:mysql :week] [_ _ expr]
-  (str-to-date "%X%V %W"
+  (str-to-date "%x%v %W"
                (hx/concat (hsql/call :yearweek expr)
-                          (hx/literal " Sunday"))))
+                          (hx/literal " Monday"))))
 
-;; mode 6: Sunday is first day of week, first week of year is the first one with 4+ days
+;; mode 3: Monday is first day of week
 (defmethod sql.qp/date [:mysql :week-of-year] [_ _ expr]
-  (hx/inc (hx/week expr 6)))
+  (hx/inc (hx/week expr 3)))
 
 (defmethod sql.qp/date [:mysql :month] [_ _ expr]
   (str-to-date "%Y-%m-%d"

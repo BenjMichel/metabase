@@ -44,6 +44,8 @@ import type {
   TimeEnabled,
 } from "metabase/lib/formatting/date";
 
+moment.locale('fr');
+
 // a one or two character string specifying the decimal and grouping separator characters
 export type NumberSeparators = ".," | ", " | ",." | ".";
 
@@ -378,8 +380,8 @@ export function formatDateTimeRangeWithUnit(
 }
 
 function formatWeek(m: Moment, options: FormattingOptions = {}) {
-  // force 'en' locale for now since our weeks currently always start on Sundays
-  m = m.locale("en");
+  // force 'fr' locale for now since our weeks currently always start on Mondays
+  m = m.locale("fr");
   return formatMajorMinor(m.format("wo"), m.format("gggg"), options);
 }
 
