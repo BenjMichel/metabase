@@ -102,8 +102,8 @@ exports[`CheckBox should render "On - Default blue" correctly 1`] = `
     className="flex align-center justify-center rounded"
     style={
       Object {
-        "backgroundColor": "#509EE3",
-        "border": "2px solid #509EE3",
+        "backgroundColor": "#172c42",
+        "border": "2px solid #172c42",
         "height": 16,
         "width": 16,
       }
@@ -459,7 +459,7 @@ exports[`Position should render "Relative" correctly 1`] = `
 exports[`ProgressBar should render "Animated" correctly 1`] = `
 <div
   className="ProgressBar__ProgressWrapper-lDFZw gfaDTt"
-  color="#509EE3"
+  color="#172c42"
 >
   <div
     className="ProgressBar__Progress-hndiLL gttMaI"
@@ -471,7 +471,7 @@ exports[`ProgressBar should render "Animated" correctly 1`] = `
 exports[`ProgressBar should render "Default" correctly 1`] = `
 <div
   className="ProgressBar__ProgressWrapper-lDFZw gfaDTt"
-  color="#509EE3"
+  color="#172c42"
 >
   <div
     className="ProgressBar__Progress-hndiLL jCqeMr"
@@ -606,7 +606,7 @@ exports[`Radio should render "underlined" correctly 1`] = `
     style={
       Object {
         "borderBottom": "3px solid transparent",
-        "borderColor": "#509EE3",
+        "borderColor": "#172c42",
       }
     }
   >
@@ -871,8 +871,8 @@ exports[`StackedCheckBox should render "Checked" correctly 1`] = `
         className="flex align-center justify-center rounded"
         style={
           Object {
-            "backgroundColor": "#509EE3",
-            "border": "2px solid #509EE3",
+            "backgroundColor": "#172c42",
+            "border": "2px solid #172c42",
             "height": 16,
             "width": 16,
           }
@@ -888,8 +888,8 @@ exports[`StackedCheckBox should render "Checked" correctly 1`] = `
       className="flex align-center justify-center rounded"
       style={
         Object {
-          "backgroundColor": "#509EE3",
-          "border": "2px solid #509EE3",
+          "backgroundColor": "#172c42",
+          "border": "2px solid #172c42",
           "height": 16,
           "width": 16,
         }

@@ -42,11 +42,11 @@
   (or (db/select-one 'Collection
         :name     "Automatically Generated Dashboards"
         :location "/")
-      (create-collection! "Automatically Generated Dashboards" "#509EE3" nil nil)))
+      (create-collection! "Automatically Generated Dashboards" "#172c42" nil nil)))
 
 (def colors
   "Colors used for coloring charts and collections."
-  ["#509EE3" "#9CC177" "#A989C5" "#EF8C8C" "#f9d45c" "#F1B556" "#A6E7F3" "#7172AD"])
+  ["#172c42" "#9CC177" "#A989C5" "#EF8C8C" "#f9d45c" "#F1B556" "#A6E7F3" "#7172AD"])
 
 (defn- ensure-distinct-colors
   [candidates]

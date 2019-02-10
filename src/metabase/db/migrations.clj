@@ -342,7 +342,7 @@
             :when                       (db/exists? model :collection_id nil)
             :let                        [new-collection (db/insert! Collection
                                                           :name  new-collection-name
-                                                          :color "#509ee3")]] ; MB brand color
+                                                          :color "#172c42")]] ; MB brand color
       ;; 3. make sure the non-admin groups don't have any perms for this Collection.
       (doseq [group-id non-admin-group-ids]
         (perms/revoke-collection-permissions! group-id new-collection))

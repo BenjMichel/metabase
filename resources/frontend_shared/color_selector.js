@@ -4498,7 +4498,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS
 /* eslint-disable no-color-literals */
 var colors = {
-  brand: "#509EE3",
+  brand: "#172c42",
   accent1: "#9CC177",
   accent2: "#A989C5",
   accent3: "#EF8C8C",
