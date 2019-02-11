@@ -205,7 +205,7 @@
 ;; because otherwise as far as MySQL is concerned you could be talking about any of the days in that week
 (defmethod sql.qp/date [:mysql :week] [_ _ expr]
   (str-to-date "%x%v %W"
-               (hx/concat (hsql/call :yearweek expr)
+               (hx/concat (hsql/call :yearweek expr 3)
                           (hx/literal " Monday"))))
 
 ;; mode 3: Monday is first day of week

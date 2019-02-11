@@ -140,8 +140,10 @@ export function applyChartTimeseriesXAxis(
     chart.xAxis().tickFormat(timestamp => {
       // timestamp is a plain Date object which discards the timezone,
       // so add it back in so it's formatted correctly
+      const offset = dataInterval.interval === "month" ? 1 : 0; // DIRTY FIX for daylight saving (bug MySQL only ?)
       const timestampFixed = moment(timestamp)
         .utcOffset(dataOffset)
+        .add(offset, 'hours')
         .format();
       return formatValue(timestampFixed, {
         ...chart.settings.column(dimensionColumn),
