@@ -405,7 +405,7 @@ function transformSingleSeries(s, series, seriesIndex) {
           _transformed: true,
           _seriesIndex: seriesIndex,
           // use underlying column name as the seriesKey since it should be unique
-          _seriesKey: col ? col.name : name,
+          _seriesKey: name,
         },
         data: {
           rows: rows.map((row, rowIndex) => {
